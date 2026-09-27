@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Haven Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🍽 Flavour Haven</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#special">Specials</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+
+            <button id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Experience Culinary Excellence</h1>
+            <p>Serving flavors from around the world with passion and perfection.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    Flavour Haven is a premium restaurant bringing together
+                    authentic cuisines from India, Italy, China, and Mexico.
+                    Our chefs craft unforgettable dining experiences using
+                    fresh ingredients and world-class recipes.
+                </p>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <h3>15+</h3>
+                    <p>Years Experience</p>
+                </div>
+
+                <div class="stat">
+                    <h3>50K+</h3>
+                    <p>Happy Customers</p>
+                </div>
+
+                <div class="stat">
+                    <h3>120+</h3>
+                    <p>Menu Items</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="indian">Indian</button>
+            <button class="filter-btn" data-filter="italian">Italian</button>
+            <button class="filter-btn" data-filter="chinese">Chinese</button>
+            <button class="filter-btn" data-filter="mexican">Mexican</button>
+        </div>
+
+        <div class="menu-grid">
+
+            <div class="menu-item indian">
+                <h3>Butter Chicken</h3>
+                <span>₹399</span>
+            </div>
+
+            <div class="menu-item italian">
+                <h3>Margherita Pizza</h3>
+                <span>₹499</span>
+            </div>
+
+            <div class="menu-item chinese">
+                <h3>Hakka Noodles</h3>
+                <span>₹299</span>
+            </div>
+
+            <div class="menu-item mexican">
+                <h3>Tacos</h3>
+                <span>₹349</span>
+            </div>
+
+            <div class="menu-item indian">
+                <h3>Paneer Tikka</h3>
+                <span>₹299</span>
+            </div>
+
+            <div class="menu-item italian">
+                <h3>White Sauce Pasta</h3>
+                <span>₹449</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chef Special -->
+    <section id="special" class="special">
+        <h2>Chef's Special</h2>
+
+        <div class="special-card">
+            <h3>Signature Fusion Platter</h3>
+            <p>
+                A unique blend of Indian spices, Italian herbs,
+                and Asian flavors crafted by our head chef.
+            </p>
+            <span>₹799</span>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>Customer Reviews</h2>
+
+        <div class="testimonial-box">
+            <p id="testimonial-text">
+                Amazing food and excellent service!
+            </p>
+            <h4 id="testimonial-author">- Sarah</h4>
+        </div>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation" class="reservation">
+        <h2>Reserve Your Table</h2>
+
+        <form id="reservationForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="date" required>
+            <input type="number" placeholder="Guests" required>
+            <button type="submit">Book Now</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Flavour Haven Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back To Top -->
+    <button id="topBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
